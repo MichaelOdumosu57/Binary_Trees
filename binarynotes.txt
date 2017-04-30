@@ -1,0 +1,20 @@
+    def empty_space(self,spacecache):
+
+        tree += ""
+        if len(spacecache) == 0:
+            pass
+        else:
+            empty = spacecache[0]
+        if empty.lc == None and empty.rc == None:
+            space = self.format_i + str(self.leftspace) + self.format_ii
+            tree += space % str("")
+            
+         elif empty.lc != None:
+             space = self.format_i + str(self.rightspace) + self.format_ii
+             tree += space % str("")
+
+        del spacecache[0]
+         
+
+        return tree
+             
